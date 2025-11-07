@@ -121,10 +121,10 @@ async def setup_database():
         
         staff_doc = {
             "_id": ObjectId("68d1974c1e6998b25c922bae"),
-            "email": "jay1@gmail.com",
-            "password": "jay123", 
-            "user_name": "jay1",
-            "role": "staff",
+            "email": "admin@gmail.com",
+            "password": "admin123", 
+            "user_name": "admin",
+            "role": "admin",
             "id": 1
         }
         if await STAFF_COLL.find_one({"id": 1}) is None:
